@@ -1,0 +1,158 @@
+1.1--Hardware comprises the physical elements of the computer. Software provides invisibal instructions that control the hardware and make it perform specific tasks.
+
+1.2--CPU, RAM, Storage Devices, Input Devices, Output Devices
+
+1.3--Central Processing Unit
+
+1.4--GHz
+
+1.5--Bits are actually switches that can have on or off values 0 and 1. A byte is the minimum storage unit in the computer and consists of eight bits.
+
+1.6--Memory is a fast and specialized area for computer to execute programs. When you run a program computer takes its data from the storage device and store it in
+memory temporarily until you close the program or shut down the computer. After you finished your work with the program, when you save it , the data in RAM
+is saved back to the storage device and removed from RAM.
+Random Access Memory
+The data is stored in any order with their memory adresses, so it is called "Random".
+
+1.7--byte
+
+1.8--byte
+
+1.9--Storage device holds the data permenantly while memory holds it temporarily.
+
+1.10--Machine language
+
+1.11--Working with machine language (0's and 1's) is very hard. So Assembly language, which is mnemonic compared with 0's and 1's, is created.
+
+1.12--Assembler is a translator which translates the assembly code to the machine code.
+
+1.13--High level program is a user friendly English like programming language which is easier to use and less complicated.
+
+1.14--A program written in a high level language is called a source program.
+
+1.15--Interpreter is a translator that translates one statement from the source code and executes it right away.
+
+1.16--A compiler translates the entire source code into the machine code and the code is executed after that.
+
+1.17--An interpreter translates and executes a program one statement at a time. A compiler translates the entire source program into a machine-language file 
+for execution. Interpreteer is interactive  but works slower. Compiler is not interactive but works faster.
+
+1.18.An operating system is a complicated program that runs on a computer and fulfills tasks like controlling and monitoring system activities, allocating and assigning system 
+resources and scheduling operations.
+Windows, Linux Kali, Linux Ubuntu MacOS etc.
+
+1.19--Controlling and monitoring system activities, allocating and assigning system resources and scheduling operations.
+
+1.20--Multiprogramming allows multiple programs to run simultaneously by sharing the same CPU.
+Multithreading allows a single program to execute multiple tasks at the same time.
+Multiprocessing,  uses two or more processors together to perform subtasks concurrently and then combine solutions of the subtasks to obtain a solution for the entire task.
+
+1.21--A team led by James Goslin.
+Oracle owns it now.
+
+1.22-Java applets are the programs that can be run from a Web browser.
+
+1.23--Java
+
+1.24--The Java language specification is a technical definition of the Java programming language’s syntax and semantics.
+
+1.25--Java Development Toolkit
+
+1.26--Integrated Development Environment
+
+1.27--They are different IDE's for the same programming language Java.
+
+1.28--Keywords are special words that have a meaning to the compiler. 
+public, static , class, etc...
+
+1.29--Yes, Java is case sensitive.
+Keywords are downcase in Java.
+
+1.30--Comment is the note of the programmer to make the program user friendly to read.
+Comments are ignored by the compiler.
+Comment line is denoted with --> //
+Comment paragraph is denoted with -->/* ...............*/
+
+1.31--System.out.println( " Display " );
+
+1.32--There is a syntax error.
+
+1.33--.java , .class
+
+1.34--Input is .java file. Output is .class file .
+
+1.35--javac
+
+1.36--java
+
+1.37--JVM is an interpreter that translates the instructions in the bytecode into the target machines language code.
+
+1.38--Yes, it can run on any computer.
+JVM is needed.
+
+1.39--When the class is not defined.
+
+1.40--When the main method is not defined.
+
+1.41--public class Test {
+	 	public static void main(String[] args);{		 	
+			System.out.println("Welcome Java");
+			}
+	 }
+
+1.42--Errors that are detected by the compiler are called syntax errors.
+Runtime errors are errors that cause a program to terminate abnormally.
+Logic errors occur when a program does not perform the way it was intended to.
+
+1.43--Mistyped keywords.
+Division by zero.
+Wrong result because of trunucation of the integer numbers.
+
+1.45--Runtime error.
+
+1.46--Logic error.
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
