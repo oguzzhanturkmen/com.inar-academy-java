@@ -12,13 +12,13 @@ public class Exercise_17 {
 		for(int i = 1; i < number + 1; i++) {
 			
 			for(int j = 0; j < number - i; j++) {
-				System.out.print("   ");
+				System.out.printf("%5s" , "");
 			}
 			for(int k = i; k > 0; k--) {
-				System.out.print(k + "  ");
+				System.out.printf("%5d" , k);
 			}
 			for(int l = 2; l < i + 1; l++) {
-				System.out.print(l + "  ");
+				System.out.printf("%5d" , l);
 			}
 			System.out.println();
 		}
