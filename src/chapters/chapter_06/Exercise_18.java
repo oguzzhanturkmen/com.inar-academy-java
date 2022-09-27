@@ -16,10 +16,10 @@ public class Exercise_18 {
         return (pass.length() >= 8 && ConsistsLettersAndDigits(pass) && containsTwoDigits(pass));
     }
     public static boolean ConsistsLettersAndDigits(String pass){
-        boolean isValid = false;
+        boolean isValid = true;
         for(int i = 0; i < pass.length(); i++){
-            if ((pass.charAt(i) >= '0' && pass.charAt(i) <= '9') || (pass.charAt(i) >= 'A' && pass.charAt(i) <= 'Z') || (pass.charAt(i) >= 'a' && pass.charAt(i) <= 'z') ){
-                isValid = true;
+            if (!((pass.charAt(i) >= '0' && pass.charAt(i) <= '9') || (pass.charAt(i) >= 'A' && pass.charAt(i) <= 'Z') || (pass.charAt(i) >= 'a' && pass.charAt(i) <= 'z') )){
+                isValid = false;
             }
         }
         return isValid;
