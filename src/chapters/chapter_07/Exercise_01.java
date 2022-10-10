@@ -3,56 +3,64 @@ package chapters.chapter_07;
 import java.util.Scanner;
 
 public class Exercise_01 {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter the number of students :");
-        int numberOfStudents = input.nextInt();
+        public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
 
-        int[] studentArray = getStudentScores(numberOfStudents , input);
-        displayGrades(studentArray);
-    }
-    public static int[] getStudentScores (int numberOfStudents , Scanner input){
-        int[] studentArray = new int[numberOfStudents];
-        for (int i = 0; i < studentArray.length; i++){
-            studentArray[i] = input.nextInt();
+            System.out.println("Enter the number of students :");
+            int numberofStudents = input.nextInt();
+
+            int[] scores = new int[numberofStudents];
+            char[] grades = new char[numberofStudents];
+
+            getScores(scores,input);
+            getGrades(scores , grades);
+            displayGrades(scores, grades);
+
         }
-        return studentArray;
-    }
-    public static int bestScore(int[] studentArray){
-        int max = studentArray[0];
-        int index = 0;
+        public static void displayGrades(int[] scores, char[] grades){
 
-        for(int i = 1; i < studentArray.length; i++){
-            if(studentArray[i] > max){
-                max = studentArray[i];
+            for(int i = 0; i < scores.length; i++){
+
+                System.out.println("Student " + i + " score is " + scores[i] + " grade is " + grades[i]);
             }
         }
-        return max;
-    }
-    public static char getGrades(int score , int max){
-
-            if(score >= max - 10){
-                return 'A';
-            } else if(score >= max - 20){
-                return 'B';
-            }else if(score >= max - 30) {
-                return 'C';
-            }else if(score >= max - 40) {
-                return 'D';
+        public static void getScores(int[] scores , Scanner input){
+            System.out.println("Enter " + scores.length + " scores :");
+            for (int i = 0; i < scores.length; i++){
+                scores[i] = input.nextInt();
             }
-            return 'F';
+        }
+        public static int findMax(int[] scores) {
+
+            int max = scores[0];
+
+            for (int i = 0; i < scores.length; i++) {
+
+                if (scores[i] > max) {
+                    max = scores[i];
+                }
+            }
+            return max;
         }
 
-        public static void displayGrades(int[] studentArray){
-            int bestScore = bestScore(studentArray);
-            for(int i = 0; i < studentArray.length; i++){
-                char grade = getGrades(studentArray[i] , bestScore);
-                System.out.println("Student " + i + " score is " + studentArray[i] + " and grade is " + grade );
+        public static void getGrades(int[] scores, char[] grades) {
+
+            int maxScore = findMax(scores);
+
+            for (int i = 0; i < scores.length; i++) {
+                if (scores[i] >= maxScore - 10) {
+                    grades[i] = 'A';
+                } else if (scores[i] >= maxScore - 20) {
+                    grades[i] = 'B';
+                } else if (scores[i] >= maxScore - 30) {
+                    grades[i] = 'C';
+                } else if (scores[i] >= maxScore - 40) {
+                    grades[i] = 'D';
+                } else {
+                    grades[i] = 'F';
+                }
+            }
         }
+    }
 
-
-        }
-
-
-}
