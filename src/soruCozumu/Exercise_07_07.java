@@ -4,14 +4,22 @@ public class Exercise_07_07 {
     public static void main(String[] args) {
 
         int[] occurrences = new int[10];
-        countOccurrences(occurrences);
+        int[] generatedNumbers = new int[100];
+        generateRandomNumbers(generatedNumbers);
+        displayGeneratedNumbers(generatedNumbers);
+        countOccurrences(occurrences , generatedNumbers);
         displayResult(occurrences);
 
     }
-    public static void countOccurrences(int[] occurrences){
+    public static void generateRandomNumbers(int[] generatedNumbers){
+        for(int i = 0; i < generatedNumbers.length; i++){
+            generatedNumbers[i] = (int)(Math.random() * 10);
+        }
+    }
+    public static void countOccurrences(int[] occurrences , int[] generatedNumbers){
 
         for (int i = 0; i < 100; i++){
-            occurrences[(int)(Math.random() * 10)]++;
+            occurrences[generatedNumbers[i]]++;
         }
     }
     public static void displayResult(int[] occurrences){
@@ -19,4 +27,12 @@ public class Exercise_07_07 {
             System.out.println(i + "'s : " + occurrences[i]);
         }
     }
+    public static void displayGeneratedNumbers(int[] array){
+        System.out.println("Generated numbers are ");
+        for(int i = 0; i < array.length; i++){
+            System.out.print(array[i] + (((i + 1) % 10 == 0) ? "\n" : " "));
+        }
+        System.out.println();
+    }
+
 }
