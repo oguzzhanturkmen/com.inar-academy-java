@@ -26,7 +26,6 @@ public class Exercise_22 {
         array[0] = queenPlace;
          boolean isTrue = true;
         int counter = 0;
-        boolean restartLoop = false;
 
         for (int i = 1; i < array.length; i++) {
             isTrue = true;
