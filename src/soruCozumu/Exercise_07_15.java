@@ -38,8 +38,7 @@ public class Exercise_07_15 {
     public static boolean ifNotDuplicate(int[] eliminatedArray, int j){
         for(int i = 0; i < eliminatedArray.length; i++){
             if(eliminatedArray[i] == j){
-                return
-                        false;
+                return false;
             }
         }
         return true;
