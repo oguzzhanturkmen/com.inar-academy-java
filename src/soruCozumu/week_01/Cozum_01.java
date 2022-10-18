@@ -1,4 +1,4 @@
-package soruCozumu;
+package soruCozumu.week_01;
 
 import java.util.Scanner;
 

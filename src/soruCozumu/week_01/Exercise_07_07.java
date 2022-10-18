@@ -1,4 +1,4 @@
-package soruCozumu;
+package soruCozumu.week_01;
 
 public class Exercise_07_07 {
     public static void main(String[] args) {
