@@ -27,8 +27,8 @@ public class Exercise_36 {
             for (int col = 0; col < array[row].length; col++) {
                 char ch = input.next().charAt(0);
                 array[row][col] = ch;
-                if (array[row][col] > 'D' || array[row][col] < 'A') {
-                    System.out.println("Wrong input : the letters must be from A to C ");
+                if (array[row][col] >= ('A' + array.length) || array[row][col] < 'A') {
+                    System.out.println("Wrong input : the letters must be from A to " + ((char)('A' + array.length)) + " excluding " + ((char)('A' + array.length)));
                     break;
                 }
             }
