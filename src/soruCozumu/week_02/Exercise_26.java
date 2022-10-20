@@ -20,7 +20,7 @@ public class Exercise_26 {
     public static void copyTwoDimensionalArray(double[][] originalArray ,double[][] copyArray ){
         for(int i = 0; i < originalArray.length; i++){
 
-            for(int j = 0; j < originalArray[0].length; j++){
+            for(int j = 0; j < originalArray[i].length; j++){
                 copyArray[i][j] = originalArray[i][j];
             }
 
@@ -37,7 +37,7 @@ public class Exercise_26 {
                 double min = Double.MAX_VALUE;
                 int index = -1;
 
-                for(int i = col; i < newArray.length; i++){
+                for(int i = col; i < newArray[row].length; i++){
                     if(min > newArray[row][i]){
                         min = newArray[row][i];
                         index = i;
