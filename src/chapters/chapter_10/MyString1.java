@@ -1,5 +1,7 @@
 package chapters.chapter_10;
 
+import java.util.Arrays;
+
 public class MyString1 {
 
     private char[] chars;
@@ -17,7 +19,7 @@ public class MyString1 {
     }
 
     public MyString1 substring(int begin, int end) {
-        if (!((begin < 0 && begin < length() - 2) && (end > 0 && end <= length()) && (begin < end))) {
+        if (!((begin > 0 && begin < length() - 1) && (end > 0 && end <= length()) && (begin < end))) {
             System.out.println("Invalid input !!!");
             System.exit(-1);
         }
@@ -55,7 +57,7 @@ public class MyString1 {
     }
     public static MyString1 valueOf(int i){
         int counter = 0;
-        int number = 0;
+        int number = i;
 
         while(number > 0){
             number /= 10;
@@ -71,5 +73,9 @@ public class MyString1 {
         return new MyString1(ch);
 
     }
+    public String toString(){
+        return Arrays.toString(chars);
+    }
+
 
 }
