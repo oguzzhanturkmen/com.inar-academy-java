@@ -43,7 +43,7 @@ public class MyInteger {
     public boolean equals(MyInteger number){
         return value == number.getValue();
     }
-    public int parseInt(char[] array){
+    public static int parseInt(char[] array){
         int sum = 0;
         int pow = 0;
         for (int i = array.length -1; i >= 0; i--) {
@@ -51,7 +51,7 @@ public class MyInteger {
         }
         return sum;
     }
-    public int parseInt(String str){
+    public static int parseInt(String str){
         int sum = 0;
         int pow = 0;
         for (int i = str.length() -1; i >= 0; i--) {
