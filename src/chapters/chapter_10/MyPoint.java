@@ -2,10 +2,10 @@ package chapters.chapter_10;
 
 public class MyPoint {
 
-    private int x;
-    private int y;
+    private double x;
+    private double y;
 
-    public MyPoint(int x, int y) {
+    public MyPoint(double x, double y) {
         this.x = x;
         this.y = y;
     }
@@ -14,11 +14,11 @@ public class MyPoint {
         this(0,0);
     }
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 

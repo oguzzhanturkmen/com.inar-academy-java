@@ -16,6 +16,7 @@ public class Circle2D {
         this.y = y;
     }
 
+
     public void setX(double x) {
         this.x = x;
     }
@@ -50,6 +51,9 @@ public class Circle2D {
 
     public boolean contains(double x, double y) {
         return getDistance(x, y) <= getRadius();
+    }
+    public boolean contains(Circle2D c) {
+        return getDistance(c.getX(), c.getY()) <= getRadius();
     }
 
     public boolean overlaps(Circle2D circle) {

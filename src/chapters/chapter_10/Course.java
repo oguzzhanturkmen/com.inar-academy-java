@@ -19,7 +19,10 @@ public class Course {
         numberOfStudents++;
     }
     public String[] getStudents(){
-        return students;
+
+        String[] array = new String[getNumberOfStudents()];
+        System.arraycopy(students , 0 , array , 0 , numberOfStudents);
+        return array;
     }
     public int getNumberOfStudents(){
         return numberOfStudents;
@@ -34,7 +37,8 @@ public class Course {
             System.exit(-1);
         }
         for (int i = index; i < student.length(); i++) {
-            students[i] = students[i - 1];
+
+            students[i] = students[i + 1];
         }
         numberOfStudents--;
     }
