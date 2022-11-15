@@ -1,6 +1,6 @@
-package chapters.chapter_11;
+package chapters.chapter_11.Exercise_02;
 
-public class Staff extends Employee{
+public class Staff extends Employee {
 
     private String title;
 
@@ -19,7 +19,7 @@ public class Staff extends Employee{
 
     @Override
     public String toString() {
-        return super.toString() +" "+ "Staff{" +
+        return super.toString() + " " + "Staff{" +
                 "title='" + title + '\'' +
                 '}';
     }

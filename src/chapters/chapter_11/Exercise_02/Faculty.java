@@ -1,6 +1,6 @@
-package chapters.chapter_11;
+package chapters.chapter_11.Exercise_02;
 
-public class Faculty extends Employee{
+public class Faculty extends Employee {
 
     private String officeHours;
     private String rank;
@@ -23,7 +23,7 @@ public class Faculty extends Employee{
     }
 
     public Faculty() {
-        this.rank ="Unknown";
+        this.rank = "Unknown";
         this.officeHours = "Unknown";
     }
 
@@ -41,7 +41,7 @@ public class Faculty extends Employee{
 
     @Override
     public String toString() {
-        return super.toString() +" "+ "Faculty{" +
+        return super.toString() + " " + "Faculty{" +
                 "officeHours='" + officeHours + '\'' +
                 ", rank='" + rank + '\'' +
                 '}';

@@ -1,6 +1,6 @@
 package chapters.chapter_11;
 
-public class Triangle extends GeometricObject{
+public class Triangle extends GeometricObject {
 
     protected double side1;
     protected double side2;
@@ -59,10 +59,12 @@ public class Triangle extends GeometricObject{
                 ", side3=" + side3 +
                 '}';
     }
-    public double getArea(){
+
+    public double getArea() {
         double s = (side1 + side2 + side3) / 2;
         return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
     }
+
     public double getPerimeter() {
         return side1 + side2 + side3;
     }

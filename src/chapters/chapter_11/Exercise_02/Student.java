@@ -1,6 +1,6 @@
-package chapters.chapter_11;
+package chapters.chapter_11.Exercise_02;
 
-public class Student extends Person{
+public class Student extends Person {
 
     private int status;
     public final static int FRESHMAN = 1;
