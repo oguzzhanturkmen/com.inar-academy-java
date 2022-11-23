@@ -1,0 +1,63 @@
+LESSON 1
+---------------
+
+git status-->status
+git add-->track file
+git commit-->to history kutucuğuna
+git log--> log
+git diff-->dosyadaki değişikliği göster -->working tree ve stage arası
+git add . --> "." means add all new and modified files to staging area.
+git diff --staged --> değişikliği göster staged ve history
+rm-- hem working tree den hem de stage den siler
+git checkout -- (file) --> staging areadan working tree ye 
+git reset HEAD "(FILE)" --> History'den staging areaya undo yapar. Head o dosyanın en güncelini geri almak için.
+git checkout (hash ilk 5 karakter) -- "file"
+.gitignore--> the files no need of tracking
+vi .gitignore --> .gitignore dosysası editlenerek göz ardı edilmesi istenen dosyaların isimleri yazılır. --> status da .gitignore untracked görünür. Onu da commitlemek gerekiyor.
+
+----------------
+
+LESSON 2
+----------------
+
+git log --all --decorate --one line --graph  ----> when we run this we see the commit graph
+alias --> belirli bir komutu belirli bir kelimeye atama ex/-> alias graph="git log -all --decorate --oneline --graph"
+git branch <branch name> 
+git checkout <branch name>
+git commit -a -m "auth for s1" --> -a parametresi önce add yapar ve sonra commit işlemi gerçekleşir.
+git diff master..SDN -->Shows what will change
+git merge SDN --> Fast forward merge.
+git branch --merged --> to see which branches merged.
+git branch -d SDN --> Delete the branch.
+git merge auth --> 3 way merge ->> aynı kod fakat kendisi otomatik 3 way yapıyor.
+Merge conflict ocurrs when we try to merge the branches that have changed the same lines in the same lines .
+git checkout -b dev --> create a branch and switch to it.
+git merge --abort --> to abort the merge --> conflict situations
+Detached HEAD-->Usually HEAD points to a branch which in turn points to a commit. Usually HEAD points to a branch which in turn points to a commit
+When HEAD is instead pointing directly to a commit, we have a detached HEAD state.
+git stash --> stashler
+git stash list --> stash listesini gösterir
+git stash list -p--> ve can see editeds
+git stash apply --> stashtekileri uygular
+git stash pop --> apply the stash and remove it from the list
+git stash apply stash@{1} --> stash seç
+
+
+------------------
+
+LESSON 3
+
+----------------
+git clone git@github.com:betty-remote/netauto.git
+git remote -->origin çıkıyor
+git remote -v --> daha detaylı görünüyor
+git fetch origin --> datayı gitten çek
+git merge origin/master --> to catch ourselves up to date
+git pull --fetch and merge beraber
+git push --> 
+git remote add >upstream< git@github.com:betty-remote/netauto.git
+
+
+ 
+
+
