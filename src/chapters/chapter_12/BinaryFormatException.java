@@ -1,10 +1,10 @@
 package chapters.chapter_12;
 
-public class HexFormatException extends  NumberFormatException{
+public class BinaryFormatException extends  NumberFormatException{
 
 
-    public HexFormatException(String hex) {
-        super(hex + "is not valid ");
+    public BinaryFormatException(String binary) {
+        super(binary + "is not valid ");
 
     }
 }

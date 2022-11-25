@@ -1,27 +1,32 @@
-package chapters.chapter_11;
+package chapters.chapter_12;
 
-public class Triangle extends GeometricObject {
+import chapters.chapter_11.GeometricObject;
+
+public class TriangleModified extends GeometricObject {
 
     protected double side1;
     protected double side2;
     protected double side3;
 
-    public Triangle() {
+    public TriangleModified() {
         super();
         this.side1 = 1;
         this.side2 = 1;
         this.side3 = 1;
     }
 
-    public Triangle(String color, boolean filled, double side1, double side2, double side3) {
+    public TriangleModified(String color, boolean filled, double side1, double side2, double side3) {
         super(color, filled);
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
     }
 
-    public Triangle(double side1, double side2, double side3) {
+    public TriangleModified(double side1, double side2, double side3) throws IllegalTriangleException{
         super();
+        if(!isLegal(side1 , side2 , side3)){
+            throw new IllegalTriangleException(side1 , side2 , side3);
+        }
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
@@ -67,5 +72,11 @@ public class Triangle extends GeometricObject {
 
     public double getPerimeter() {
         return side1 + side2 + side3;
+    }
+    private boolean isLegal(double side1 , double side2 , double side3){
+        if ((side1 + side2 < side3) || (side2 + side3 < side1) || (side1 + side3 < side2) || (side1 == 0 || side2 == 0 || side3 == 0)) {
+            return false;
+        }
+        return true;
     }
 }
