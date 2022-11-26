@@ -1,6 +1,7 @@
 package chapters.chapter_12;
 
 import java.io.File;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Exercise_13 {
@@ -23,6 +24,8 @@ public class Exercise_13 {
             int countCharacters = 0;
             try (
                     Scanner input = new Scanner(file);
+                    PrintWriter output = new PrintWriter(file);
+
             ) {
                 while (input.hasNext()) {
                     s = input.nextLine();
